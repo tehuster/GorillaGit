@@ -1,5 +1,7 @@
 <?php
 
+//Adding, removing, deleting 2d array. example shopping cart.
+
 /////////////////////////////Create 2d array;
 $shopCart = array
   (

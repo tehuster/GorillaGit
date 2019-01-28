@@ -1,5 +1,7 @@
 <?php
 
+//Sorting objects in array by property.
+
 class User
 {
     public $name;
@@ -48,19 +50,5 @@ function sort_objects_by_age($a, $b) {
 	if($a->age == $b->age){ return 0 ; }
 	return ($a->age < $b->age) ? 1 : -1;
 }
-
-
-
-
-
-
-
-
-
-// $cars = array($myCar, $yourCar);
-
-// foreach ($cars as $car) {
-//     echo 'This car is a ' . $car->color . ' ' . $car->type . "\n";
-// }
 
 ?>
