@@ -1,21 +1,21 @@
-body {    
-    display: grid;
-    grid-template-columns: auto  200px 200px auto ;
-    grid-template-rows: 64px 200px 200px 200px auto;
-    background-color: grey;
-    grid-column-gap: 2px;    
-    grid-row-gap: 2px;
+body {
+  display: grid;
+  grid-template-columns: auto 200px 200px auto;
+  grid-template-rows: 64px 200px 200px 200px auto;
+  background-color: grey;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
 }
 
 #nav {
-    grid-row: 1 / 2;
-    grid-column: 1 / 5;
-    background-color: aquamarine;
-} 
+  grid-row: 1 / 2;
+  grid-column: 1 / 5;
+  background-color: aquamarine;
+}
 
 #codeGorilla {
-    background-image: url(img/codegorilla-logo.png);
-    background-size: 100% 100%;
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;    
+  background-image: url(../img/codegorilla-logo.png);
+  background-size: 100% 100%;
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
 }
