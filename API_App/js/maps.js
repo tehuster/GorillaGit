@@ -105,7 +105,7 @@ function createCard(lati, long, json) {
         json.main.temp +
         "° !" +
         "</h3>" +
-        '<img src="tenor.gif" width="100px" height="100px" >' +
+        '<img src="img/tenor.gif" width="100px" height="100px" >' +
         '<a href="http://www.google.com/search?q=Cheap+tickets+' +
         json.id +
         '">' +
@@ -125,7 +125,7 @@ function createCard(lati, long, json) {
         json.weather[0].description +
         " in:" +
         "</h3>" +
-        '<img src="rain.gif" width="100px" height="100px" >' +
+        '<img src="img/rain.gif" width="100px" height="100px" >' +
         "<h3>" +
         json.id +
         json.name +
