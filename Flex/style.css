@@ -1,0 +1,67 @@
+.debug{
+    border: 1px solid red;
+}
+
+.bigWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+.top{
+    height: 64px;    
+}
+
+.header{
+    height: 128px;
+}
+
+.nav{
+    height: 64px;
+}
+
+.korting{
+    height: 256px;     
+}
+
+.whitespace{
+    height: 64px;
+}   
+
+.photos{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    text-align: center; 
+}
+
+.photo{
+    flex: 1;
+    height: 100%;
+}
+
+.esboxParent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.esbox{
+    width: 100%;
+    height: 64px;
+}
+
+.es1{
+    background-color: aquamarine;
+}
+.es2{
+    background-color: red;
+}
+.es3{
+    background-color: violet;
+}
+
+
+

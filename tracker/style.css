@@ -1,0 +1,68 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+}
+
+.overlay_wrapper{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events:none;
+}
+
+.button_wrapper{
+    margin: 0 auto;   
+    height: 100px;
+    width: 200px;
+    pointer-events:all;
+}
+
+.button{
+    height:50px;
+    width: 100%;
+    pointer-events:all;
+}
+
+
+.debug{
+    border: 1px solid red;
+    z-index: 2;    
+}
+
+.infoWindow{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events:none;
+    text-align: center;
+}
+
+img{
+    margin: 0 auto;
+}
+
+

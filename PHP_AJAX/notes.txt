@@ -1,0 +1,16 @@
+Code hergebruiken. vxz
+
+Leesbaasheid en uniformiteit.
+
+Objects hebben altijd maar 1 functie!
+
+
+class
+
+variables -> properties.
+
+functies -> methods.
+
+constructor.
+
+Polymorphism.

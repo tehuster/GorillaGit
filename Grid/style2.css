@@ -1,0 +1,113 @@
+     body {    
+    display: grid;
+    grid-template-columns: auto 200px 200px 200px auto;
+    grid-template-rows: 32px 100px 200px 200px 200px auto;
+} 
+
+p {
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#navBar {
+    grid-column: 1 / 6;    
+    grid-row: 1 / 2;    
+    background-color: aquamarine;
+} 
+
+#A {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;    
+    background-color: orangered;  
+    display: flex;
+    align-items: start;
+    justify-content: start; 
+} 
+
+.gridItem {
+    width: 150px;
+    height: 150px;
+    background-color: black;  
+    text-align: center;   
+}
+
+#B {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;    
+    background-color: greenyellow;  
+    display: flex;
+    align-items: start;
+    text-align: center;
+    justify-content: center; 
+}  
+
+
+
+#C {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;    
+    background-color: lightblue;  
+    display: flex;
+    align-items: start;
+    justify-content: flex-end; 
+} 
+
+
+
+#D {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;    
+    background-color: palevioletred;  
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+} 
+
+
+#E {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;    
+    background-color:palegreen;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+} 
+
+#F {
+    grid-column: 4 / 5
+    ;
+    grid-row: 4 / 5;    
+    background-color: paleturquoise;  
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+} 
+
+#G {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;    
+    background-color: plum;  
+    display: flex;
+    align-items: flex-end;
+    justify-content: start; 
+} 
+
+#H {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;    
+    background-color:navy;  
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+} 
+
+#I {
+    grid-column: 4 / 5
+    ;
+    grid-row: 5 / 6;    
+    background-color: firebrick;  
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; 
+} 

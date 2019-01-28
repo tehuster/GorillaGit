@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Searching 4 Sun</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="maps.js"></script>
+    <script src="button.js"></script>
+  </head>
+  <body>
+    <div id="map"></div> 
+    <div class="overlay_wrapper">
+            <div class="overlay">
+
+            </div>
+            <div class="overlay">              
+                <div class="button_wrapper">
+                        <div class="fancy-button">
+                                <div class="left-frills frills"></div>
+                                <div class="button" onclick="getLocation()">Sunny?</div>
+                                <div class="right-frills frills"></div>
+                        </div>
+                        <!-- <input value="GetWeather!" class="button" type="button" onclick="getLocation()"> -->
+                </div>                
+                    
+            </div>
+            
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqvJGvB0bHx9k_mrqn4D2oRsARqO5CNL0&callback=initMap"
+async defer></script>
+  </body>
+</html>
