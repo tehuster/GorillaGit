@@ -1,0 +1,16 @@
+Code hergebruiken.
+
+Leesbaasheid en uniformiteit.
+
+Objects hebben altijd maar 1 functie!
+
+<? php include("class_lib.php"); ?>
+
+class
+
+variables -> properties.
+
+functies -> methods.
+
+
+

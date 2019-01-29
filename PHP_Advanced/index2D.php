@@ -1,6 +1,6 @@
 <?php
 
-//Adding, removing, deleting 2d array. example shopping cart.
+//Adding, removing, deleting 2d array. 
 
 /////////////////////////////Create 2d array;
 $shopCart = array
@@ -50,7 +50,7 @@ function addToShopCart($P_ID, $P_AMOUNT, $ARRAY){   //Netter als je functie maak
     if(searchForId($P_ID, $ARRAY) == null){
         //echo "ID NOT IN ARRAY PUSH NEW ID TO ARRAY + AMOUNT <br>";
         $HALLO = array("p_id" => $P_ID,"p_amount" => $P_AMOUNT);               
-        array_push($ARRAY, $HALLO);  //werkt niet.. wel op regel 31. dus waarom niet hier.
+        array_push($ARRAY, $HALLO);  
         //echo "ADDED ID: " . $P_ID . "ADDED AMOUNT: " . $P_AMOUNT . "<br>"; 
         return $ARRAY;       
     }else{
@@ -79,12 +79,5 @@ $shopCart = removeElementFromArray(4, $shopCart);
 $shopCart = removeElementFromArray(3, $shopCart);
 
 printShopCart($shopCart);
-
-//////////////////////////////Remove 2d array;
-//Remove without checking
-
-//Subtract 1 from p_id, p_amount
-
-//if 0 p_amount, remove entry.
 
 ?>
