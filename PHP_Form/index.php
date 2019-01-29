@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <form action="formHandler.php" method="post">
+    <form action="formHandler.php" method="GET">
 
         <h1>Sign Up</h1>
 
@@ -16,10 +16,10 @@
         <input type="text" id="name" name="user_firstname" autofocus>
 
         <label for="name">Gorilla LastName:</label>
-        <input type="text" id="name" name="user_lastname">
+        <input type="text" name="user_lastname">
 
         <label for="name">Gorilla Title:</label>
-        <input type="text" id="name" name="user_title">
+        <input type="text" name="user_title">
 
         <label for="mail">Gorilla Email:</label>
         <input type="email" id="mail" name="user_email">
@@ -38,12 +38,12 @@
             </optgroup>       
         </select>
 
-        <!-- <label>Interests</label>
+        <label>Interests</label>
         <input type="checkbox" id="development" value="bananas" name="user_interest"><label class="light" for="development">Banana's</label><br>
-        <br> -->
-        <!-- <input type="color" name="favcolor">
+        <br> 
+        <input type="color" name="favcolor">
         <input type="date">
-        <input type="number"> -->
+        <input type="number">
         <br>
         <br>
         <button type="submit">Sign Up</button>

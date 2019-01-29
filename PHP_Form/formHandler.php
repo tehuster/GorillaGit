@@ -1,19 +1,19 @@
 <?php
-    // echo "GorillaPower";
+
     // echo "<br>";
-    // echo $_GET["user_name"]; 
+    // echo $_GET["user_firstname"]; 
+    // echo "<br>";
+    // echo $_GET["user_lastname"]; 
     // echo "<br>";
     // echo $_GET["user_email"]; 
     // echo "<br>";
-    // echo $_GET["user_password"]; 
-    // echo "<br>";
     // echo $_GET["user_job"]; 
     // echo "<br>";
-    // echo $_GET["user_interest"]; 
+    // echo $_GET["user_password"]; 
 
     // echo "GorillaPower";
     // echo "<br>";
-    // echo $_POST["user_name"]; 
+    // echo $_POST["banaantje123123"]; 
     // echo "<br>";
     // echo $_POST["user_email"]; 
     // echo "<br>";
@@ -21,8 +21,7 @@
     // echo "<br>";
     // echo $_POST["user_job"]; 
     // echo "<br>";
-    // echo $_POST["user_interest"]; 
-
+    // echo $_POST["user_email"]; 
     
         $firstname = $_POST["user_firstname"];
         $lastname = $_POST["user_lastname"];
@@ -49,6 +48,14 @@
         
         $conn = null;
     
-        //header("Location: index.php");  
+        header("Location: index.php");  
+
+        // $folderString = "../img/";
+        // $folderString .= $_GET["user_firstname"];
+        // echo $folderString;
+    
+        // $DBIMG = "banaantje.jpg";
+    
+        // $DMIMG = $folderString . $DBIMG;    
 
 ?>
