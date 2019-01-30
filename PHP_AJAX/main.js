@@ -1,35 +1,37 @@
 function stuurDB() {
+  var category = document.getElementById("category").value;
+  console.log(category);
 
-    var category = document.getElementById('category').value;
-    console.log(category);
-    var value = document.getElementById('value').value;
-    console.log(value);
+  var value = document.getElementById("value").value;
+  console.log(value);
 
-    var xmlhttp = new XMLHttpRequest();
+  var xmlhttp = new XMLHttpRequest();
 
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      //console.log(this.responseText);
+      document.getElementById("phpOutput").innerHTML = this.responseText;
+    } else if (this.status == 404) {
+      console.log("Deze pagina bestaat niet!");
+    }
+  };
 
-            //console.log(this.responseText);
-            document.getElementById("phpOutput").innerHTML = this.responseText;
-
-        } else if (this.status == 404) {
-            console.log("Deze pagina bestaat niet!");
-        }
-    };
-
-    xmlhttp.open("GET", "card.php?category_key=" + category + "&value_key=" + value, true);
-    xmlhttp.send();
+  xmlhttp.open(
+    "GET",
+    "card.php?category_key=" + category + "&value_key=" + value,
+    true
+  );
+  xmlhttp.send();
 }
 
 GetInfoFromDatabase("example.url.php?gorilla=1", showData);
 
 function GetInfoFromDatabase(url, outputData) {
   var xhttp;
-  xhttp=new XMLHttpRequest();
+  xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        outputData(this);
+      outputData(this);
     }
   };
   xhttp.open("GET", url, true);
@@ -38,6 +40,4 @@ function GetInfoFromDatabase(url, outputData) {
 
 function showData(data) {
   // action goes here
-} 
-
-
+}

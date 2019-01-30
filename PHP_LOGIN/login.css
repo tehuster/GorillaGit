@@ -1,0 +1,49 @@
+/* PHILIP ERWIN FERRAN */
+* {
+   box-sizing: border-box;
+}
+
+.loginForm {
+   /* background-color: #00f; */
+   background-image: linear-gradient(to bottom right, red, yellow);
+   color: #fff;
+   max-width: 400px;
+   margin: 20vh auto;
+   padding: 10px;
+   border-radius: 12px;
+   font-family: 'Comic Sans MS', cursive, sans-serif;
+   border: 2px solid #000;
+   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+}
+
+.loginForm label {
+   display: block;
+   margin-top: 10px;
+}
+
+.loginForm a {
+   text-decoration: none;
+   color: #000;
+}
+
+.loginForm input {
+   display: block;
+   border-radius: 12px;
+   margin-top: 5px;
+   padding: 2px 2px 2px 5px;
+}
+
+.submitButton {
+   margin-top: 10px;
+   border-radius: 12px;
+   background: #fff;
+   padding: 1px 15px;
+}
+
+.loginImg {
+   /* position: absolute; */
+   float: right;
+   width: 180px;
+   height: auto;
+   /* left: 800px; */
+}
