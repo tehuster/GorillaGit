@@ -38,9 +38,9 @@
     
     class DBC {
         private $servername = "localhost";
-        private $username = "root";
-        private $password = "";
-        private $database = "gorillas";
+        private $username = "tehuster";
+        private $password = "@Banaan007";
+        private $database = "CodeGorilla";
 
         public $database_conn;
 

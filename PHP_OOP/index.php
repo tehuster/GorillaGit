@@ -4,7 +4,7 @@
     $db_conn = new DBC;
     $db_conn -> init_connection();
 
-    $getDBData = new getDBData($db_conn -> database_conn, "SELECT * FROM studenten WHERE color = 'red'");
+    $getDBData = new getDBData($db_conn -> database_conn, "SELECT * FROM Gorillas");
     $dbData = $getDBData -> getDBData();
 
     foreach ($dbData as $row)
