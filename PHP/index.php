@@ -4,7 +4,7 @@
     // echo "<br>";
     // echo "<br>";
 
-    // print_r("Hello Gorillas, print_r()");
+    // echo print_r("Hello Gorillas, print_r()");
     // print_r("<br>");
     // print_r("<br>");
     
@@ -14,11 +14,11 @@
     
     // Variables 
 
-    //  $codeGorilla = "Thomas";
+    //  $codeGorilla = 'Thomas';
     //  $bananaCounter = 14;
 
     // echo $codeGorilla;
-    // echo "<br>";
+    // echo '<br>';
     // echo "I've got " . $bananaCounter . " banana's in my treehouse.";    
 
     //Operators
@@ -39,15 +39,23 @@
     // echo $codeGorilla;
     // echo "<br>";
     // echo "I've got " . $bananaCounter . " banana's in my treehouse.";
+    // echo "I've got $bananaCounter banana's in my treehouse."; 
     // echo "<br>";
 
     //Arrays
 
-    // $gorillas = array("Harambe", "Bokito","BennyBanana", "GerryGorilla");
+    $gorillas = array(
+    'Harambe', 
+    "Bokito",
+    "BennyBanana", 
+    "GerryGorilla",
+    "Philipe"
+    );
 
+    // echo $gorillas[0]; 
 
-    // foreach($gorillas as $gorilla){
-    //     echo $gorilla;
+    // foreach($gorillas as $eenGorilla){
+    //     echo $eenGorilla;
     //     echo "<br>";
     // }
     //     echo "<br>";
@@ -67,7 +75,6 @@
     //     //echo "Yooo " . $name . " want a banana?";
     //     echo "Yooo $name want a banana?";
     // }
-    
 
     // callGorilla("Thomas");
     // echo "<br>";
@@ -77,13 +84,13 @@
 
     //Function die iets returnen
 
-    function checkMostBananas($banana1, $banana2){
-        if($banana1 > $banana2){
-            return $banana1;
-        }else{
-            return $banana2;
-        }
-    }
+    // function checkMostBananas($banana1, $banana2){
+    //     if($banana1 > $banana2){
+    //         return $banana1;
+    //     }else{
+    //         return $banana2;
+    //     }
+    // }
 
     // echo checkMostBananas(4, 5);
     // echo "<br>";
@@ -101,16 +108,16 @@
     // $blueberry = 2;
 
     // function fruitBowl(){        
-    //     echo $kiwi;
+    //     echo $kiwi; //niet
     //     $mango = 8;
 
     //     global $blueberry;
-    //     echo $blueberry;
+    //     echo $blueberry; //wel
     // }
 
     // fruitBowl();
 
-    // echo $mango;
+    // echo $mango; //niet
 
     //Mango error.
     //Kiwi geen error.
@@ -183,7 +190,7 @@
     // echo $youngGorilla -> age;
     // echo "<br>";
 
-    // $oldGorillas = new Gorilla("Edward", "Huster", 71);
+    $oldGorillas = new Gorilla("Edward", "Huster", 71);
 
     // echo $oldGorillas -> firstname;
     // echo "<br>";
@@ -192,11 +199,11 @@
     // echo $oldGorillas -> age;
     // echo "<br>";
 
-    // $oldGorillas -> echoInfo();
+    $oldGorillas -> echoInfo();
 
     //HTTP REQUESTS
     //echo $_POST[]; 
-    //echo $_GET[];
+    //echo $_GET['value'];
 
     //SESSIONS
     //echo $_SESSION[];

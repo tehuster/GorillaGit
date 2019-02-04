@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <form action="formHandler.php" method="GET">
+    <form action="formHandler.php" method="POST">
 
         <h1>Sign Up</h1>
 
@@ -46,7 +46,7 @@
         <input type="number">
         <br>
         <br>
-        <button type="submit">Sign Up</button>
+        <button type="submit" >Sign Up</button>
 
     </form>
 </body>

@@ -1,6 +1,7 @@
 <?php    
+
     // Start the session
-    session_start();
+     session_start();
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@
 <h1>INDEX</h1>
 
 <?php
-    //Set session variables
+    // //Set session variables
     $_SESSION['user_name'] = 'Thomas';
     $_SESSION['user_age'] = 16;
     $_SESSION['user_role'] = 'admin';

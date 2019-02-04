@@ -10,14 +10,14 @@
 
     foreach ($db_result as $row)
     {   
-        echo '<div class="card">' .
+        echo '<div class="card">' . 
              '<a href="personpage.php?YOYO=' . $row['ID'] . '">' .
              '<img src="' . $row['img_url'] . '" alt="' . $row['firstname'] . '" style="width:100%">' .
              '</a>' .
              '<h1>' . $row['firstname']  . ' ' . $row['lastname'] . '</h1>' .
              '<p class="title">' . $row['title'] . '</p>' .           
              '<p>CodeGorilla Bootcamp</p>' .
-             '</div>';
+             '</div>';              
     }       
 
     $conn = null;  

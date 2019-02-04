@@ -1,48 +1,22 @@
 <?php
 
-    class getDBData {
-        private $db_querie;
-        private $db_conn;
+    //https://www.youtube.com/watch?v=pTB0EiLXUC8
 
-        public function __construct($db_conn, $querie) {
-            $this -> db_conn = $db_conn;
-            $this -> db_querie = $querie;
-        }
+    //ENCAPSULATION
 
-        public function getDBData(){            
-            $data = $this -> db_conn -> query($this -> db_querie);  
-            return $data;
-        }
-    }
+    //ABSTRACTION
 
-    class Card {
-        private $user_firstname;
-        private $user_lastname;
-        private $user_title;
-        private $user_city;
+    //INHERITANCE
 
-        public function __construct($firstname, $lastname, $title, $city) {
-            $this -> user_firstname = $firstname;
-            $this -> user_lastname = $lastname;
-            $this -> user_title = $title;
-            $this -> user_city = $city;
-        }
+    //POLYMORPHISM
 
-        public function echoCard(){
-            echo '<div class="card">
-                  <h1>'.  $this -> user_firstname  . ' ' .  $this -> user_lastname . '</h1>
-                  <p class="title">' .  $this -> user_title . '</p>
-                  <p>Uit: ' . $this -> user_city . '</p>';
-        }
-    }
-    
-    class DBC {
+    class databaseConnection {
         private $servername = "localhost";
         private $username = "tehuster";
         private $password = "@Banaan007";
         private $database = "CodeGorilla";
 
-        public $database_conn;
+        protected $database_connection;
 
         public function init_connection(){
             try {         
@@ -52,7 +26,7 @@
                 // set the PDO error mode to exception
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 
-                $this -> database_conn = $conn;
+                $this -> database_connection = $conn;
                 // echo "Connected successfully: <br>"; 
             }
             catch(PDOException $e) {
@@ -61,6 +35,41 @@
         }
     }
 
+    class getData extends databaseConnection{
+        private $db_querie;
+        
+        public function __construct($querie) {
+            $this -> db_querie = $querie;
+        }
+
+        public function getDBData(){            
+            $data = $this -> database_connection -> query($this -> db_querie);  
+            return $data;
+        }
+    }
+
+    class Card {
+        private $user_firstname;
+        private $user_lastname;
+        private $user_title;
+        private $user_url;
+
+        public function __construct($firstname, $lastname, $title, $img_url) {
+            $this -> user_firstname = $firstname;
+            $this -> user_lastname = $lastname;
+            $this -> user_title = $title;
+            $this -> user_url = $img_url;
+        }
+
+        public function echoCard(){
+            echo '<div class="card">' . 
+                 '<img src="' . $this -> user_url . '" alt="Photo not found" style="width:100%">' .
+                 '<h1>' . $this -> user_firstname  . ' ' . $this -> user_lastname . '</h1>' .
+                 '<p class="title">' . $this -> user_title . '</p>' .           
+                 '<p>CodeGorilla Bootcamp</p>' .
+                 '</div>';    
+        }
+    }
 
     class navbar {
         
@@ -71,11 +80,6 @@
 
         // The  child can use the parent's class code
     }
-
-
-
-
-
 
 
 

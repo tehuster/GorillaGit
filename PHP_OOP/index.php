@@ -1,17 +1,25 @@
-<?php include("classes.php"); ?>
+<?php 
+    include("classes.php"); 
+    include "templates/header.php";
+?>
 
 <?php
-    $db_conn = new DBC;
-    $db_conn -> init_connection();
-
-    $getDBData = new getDBData($db_conn -> database_conn, "SELECT * FROM Gorillas");
-    $dbData = $getDBData -> getDBData();
+    
+    $getData = new getData("SELECT * FROM Gorillas");
+    $getData -> init_connection();
+    $dbData = $getData -> getDBData();   
 
     foreach ($dbData as $row)
     { 
-        $card0 = new Card($row['firstname'], $row['lastname'], $row['title'], $row['email']);
-        $card0 -> echoCard();
+        $card = new Card($row['firstname'], $row['lastname'], $row['title'], $row['img_url']);
+        $card -> echoCard();
     }
 
 ?>
+
+<?php
+    include "templates/footer.php";
+?>
+
+
 

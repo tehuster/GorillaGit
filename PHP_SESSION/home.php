@@ -1,16 +1,17 @@
 <h1>HOME</h1>
 
 <?php
+
     // Start the session
     session_start();   
 
-    echo $_SESSION['user_name'];
-    echo '<br>';
-    echo $_SESSION['user_role'] ;
-    echo '<br>';
-    echo $_SESSION['user_age'] ;
-    echo '<br>';
-    echo $_SESSION['user_gender'] ;
+    // echo $_SESSION['user_name'];
+    // echo '<br>';
+    // echo $_SESSION['user_role'] ;
+    // echo '<br>';
+    // echo $_SESSION['user_age'] ;
+    // echo '<br>';
+    // echo $_SESSION['user_gender'] ;
 ?>
 
 <!DOCTYPE html>
