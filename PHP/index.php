@@ -163,7 +163,7 @@
         public $age;
         //private 
         //protected 
-
+    
         function __construct($_firstname, $_lastname, $_age){
             $this -> firstname = $_firstname;
             $this -> lastname = $_lastname;
@@ -175,20 +175,8 @@
             echo $this -> lastname;
             echo $this -> age;
         }
-    }
-    
-    // create an object
-    // $youngGorilla = new Gorilla();
-    // $youngGorilla -> firstname = "Thomas";
-    // $youngGorilla -> lastname = "Huster";
-    // $youngGorilla -> age = 31;
+    }   
 
-    // echo $youngGorilla -> firstname;
-    // echo "<br>";
-    // echo $youngGorilla -> lastname;
-    // echo "<br>";
-    // echo $youngGorilla -> age;
-    // echo "<br>";
 
     $oldGorillas = new Gorilla("Edward", "Huster", 71);
 

@@ -1,5 +1,4 @@
 <?php
-
     //https://www.youtube.com/watch?v=pTB0EiLXUC8
 
     //ENCAPSULATION
@@ -8,7 +7,10 @@
 
     //INHERITANCE
 
-    //POLYMORPHISM
+    //POLY MORPHISM
+
+    //MVC
+    //MODEL VIEW CONTROLLER
 
     class databaseConnection {
         private $servername = "localhost";
@@ -36,8 +38,8 @@
     }
 
     class getData extends databaseConnection{
-        private $db_querie;
-        
+        private $db_querie; //SELECT * FROM Gorillas
+        // We hebben een connectie opgeslagen in database_connection
         public function __construct($querie) {
             $this -> db_querie = $querie;
         }
@@ -70,6 +72,9 @@
                  '</div>';    
         }
     }
+
+    $Cards = new Card("Thomas", "Huster", "Coach", "123.jpg");
+    $Cards -> echoCard();
 
     class navbar {
         
